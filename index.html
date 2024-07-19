@@ -1,0 +1,20 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script>
+    function changcolor() {
+      document.querySelector("#svgobject").getSVGDocument().getElementById("CADIF").setAttribute("fill", "red")
+    }
+  </script>
+  </head>
+<body>
+  <h1>test</h1>
+  <button onclick="changcolor()">Click to change to yellow</button>
+  <div id="svgdiv">
+    <object id="svgobject" data="images/france-cr.svg"></object>
+  </div>
+  <hr>
+</body>
+
+</html>
