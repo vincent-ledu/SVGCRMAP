@@ -1,0 +1,27 @@
+{
+  "name": "svgcrmap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node-dev app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincent-ledu/SVGCRMAP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vincent-ledu/SVGCRMAP/issues"
+  },
+  "homepage": "https://github.com/vincent-ledu/SVGCRMAP#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "node-dev": "^8.0.0"
+  }
+}

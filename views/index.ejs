@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script>
+    function changeColor(mnemo) {
+      let colorIndex = Number(document.getElementById("value"+mnemo).value);
+      let colorValue = document.getElementsByName("colors")[colorIndex-1].value;
+      let doc = document.getElementById("svgobject").contentDocument.getElementById("CADIF").style.fill = colorValue;
+    }
+  </script>
+  </head>
+<body>
+  <h1>Carte des CR</h1>
+  Nom du projet : <input type="text" id="projectName">
+
+  <div id="svgdiv">
+    <object id="svgobject" data="images/fr_caisses_regionales.svg"></object>
+  </div>
+  <hr>
+  <div id="colorPalette">
+    <div>
+      Couleur 1 : <input type="color" name="colors" value="#00FF00" /> - Légende : <input type="text" name="legends"/>
+    </div>
+    <div>
+      Couleur 2 : <input type="color" name="colors" value="#FF7B00" /> - Légende : <input type="text" name="legends"/>
+    </div>
+    <div>
+      Couleur 3 : <input type="color" name="colors" value="#FF0000" /> - Légende : <input type="text" name="legends"/>
+    </div>
+  </div>
+  <button onclick="addColor()">Ajouter une couleur...</button>
+  <table>
+    <tr>
+      <th>Mnemo</th>
+      <th>Nom</th>
+      <th>Code CR</th>
+      <th>Valeur</th>
+    </tr>
+    <%
+      CRs.forEach(function(CR) { %>
+        <tr>
+          <td><%= CR.mnemo %></td>
+          <td><%= CR.name %></td>
+          <td><%= CR.number %></td>
+          <td>
+            <input  type="number" 
+                    name="CRValue" 
+                    id="value<%= CR.mnemo %>" 
+                    min="1" max="3" 
+                    value="1" 
+                    onchange="changeColor('<%= CR.mnemo %>')"></td></tr>
+      <%
+      });
+    %>
+    </table>
+</body>
+
+</html>

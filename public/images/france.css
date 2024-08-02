@@ -1,0 +1,247 @@
+svg#france {
+  color-scheme: dark light;
+}
+
+#france path {
+  stroke-width: 1;
+  stroke: rgb(0, 0, 0);
+}
+
+#france g {
+  stroke-width: 1;
+  stroke: rgb(0, 0, 0);
+}
+
+@media (prefers-color-scheme: dark) {
+  #france path {
+    stroke: rgb(255, 255, 255);
+  }
+}
+
+.crtxt {
+  font: bold 14px arial;
+  fill: rgb(0, 0, 0);
+}
+
+.crtxt:hover {
+  font: bold 14px arial;
+  fill: rgb(255, 255, 255);
+}
+
+/*
+            Si gestion de mode contrasté
+            */
+:root[class*="contrast"] #france path {
+  stroke-width: 3;
+}
+#CAAP {
+  fill: rgb(50, 181, 64);
+}
+
+#CAALV {
+  fill: rgb(231, 139, 0);
+}
+
+#CAAM {
+  fill: rgb(137, 177, 87);
+}
+
+#CAAQ {
+  fill: rgb(224, 104, 9);
+}
+
+#CAATL {
+  fill: rgb(230, 45, 41);
+}
+
+#CABP {
+  fill: rgb(214, 159, 186);
+}
+
+#CACF {
+  fill: rgb(205, 134, 142);
+}
+
+#CACL {
+  fill: rgb(115, 203, 212);
+}
+
+#CACO {
+  fill: rgb(147, 134, 188);
+}
+
+#CACE {
+  fill: rgb(231, 139, 0);
+}
+
+#CACB {
+  fill: rgb(72, 187, 169);
+}
+
+#CACM {
+  fill: rgb(233, 160, 126);
+}
+
+#CACP {
+  fill: rgb(146, 205, 175);
+}
+
+#CACR {
+  fill: rgb(104, 177, 194);
+}
+
+#CACDA {
+  fill: rgb(159, 160, 191);
+}
+
+#CAFI {
+  fill: rgb(168, 210, 142);
+}
+
+#CAFC {
+  fill: rgb(248, 196, 120);
+}
+
+#CAGU {
+  fill: rgb(157, 218, 236);
+}
+
+#CADIF {
+  fill: rgb(146, 205, 175);
+}
+
+#CAIV {
+  fill: rgb(104, 177, 194);
+}
+
+#CARU {
+  fill: rgb(159, 160, 191);
+}
+
+#CALG {
+  fill: rgb(168, 210, 142);
+}
+
+#CALHL {
+  fill: rgb(248, 196, 120);
+}
+
+#CALO {
+  fill: rgb(157, 218, 236);
+}
+
+#CAMA {
+  fill: rgb(50, 181, 64);
+}
+
+#CAMH {
+  fill: rgb(231, 139, 0);
+}
+
+#CANF {
+  fill: rgb(137, 177, 87);
+}
+
+#CANE {
+  fill: rgb(224, 104, 9);
+}
+
+#CAMP {
+  fill: rgb(230, 45, 41);
+}
+
+#CANO {
+  fill: rgb(214, 159, 186);
+}
+
+#CANS {
+  fill: rgb(205, 134, 142);
+}
+
+#CAPCA {
+  fill: rgb(115, 203, 212);
+}
+
+#CAPG {
+  fill: rgb(147, 134, 188);
+}
+
+#CADS {
+  fill: rgb(195, 187, 100);
+}
+
+#CASM {
+  fill: rgb(72, 187, 169);
+}
+
+#CASRA {
+  fill: rgb(233, 160, 126);
+}
+
+#CATO {
+  fill: rgb(146, 205, 175);
+}
+
+#CATP {
+  fill: rgb(104, 177, 194);
+}
+
+#CAVF {
+  fill: rgb(159, 160, 191);
+}
+
+@media (any-pointer: fine) {
+  @media (prefers-contrast: no-preference) {
+    #france path {
+      opacity: .9;
+    }
+  }
+
+  @media (prefers-contrast: more) {
+    #france path {
+      opacity: .7;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    #france path {
+      transition: all .3s;
+    }
+  }
+
+  #france g path {
+    cursor: pointer;
+  }
+
+  #france g:hover {
+    opacity: 1;
+  }
+
+  #france g:hover {
+    fill: black;
+    stroke: transparent;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    #france g:hover {
+      fill: white;
+      stroke: transparent;
+    }
+  }
+}
+
+#france g:focus-within {
+  opacity: 1;
+}
+
+#france g path:focus {
+  fill: black;
+  stroke: rgb(0, 0, 0);
+}
+
+@media (prefers-color-scheme: dark) {
+  #france g path:focus {
+    fill: white;
+    stroke: rgb(255, 255, 255);
+  }
+}
